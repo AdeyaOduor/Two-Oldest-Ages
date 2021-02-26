@@ -1,0 +1,6 @@
+// return the two oldest/oldest ages within the array of ages passed in.
+function twoOldestAges(ages){
+  //return ages.sort((a, b) => a-b).slice(-2)
+  return ages.sort((a, b) => b-a).splice(0,2).reverse();
+    
+}
